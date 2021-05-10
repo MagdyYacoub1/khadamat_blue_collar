@@ -26,6 +26,12 @@ const TextStyle contextTextStyle = TextStyle(
   color: contextTextColor,
 );
 
+const TextStyle activeContextTextStyle = TextStyle(
+  fontSize: 20,
+  fontWeight: FontWeight.bold,
+  color: activeContextTextColor,
+);
+
 const TextStyle buttonTextStyle = TextStyle(
   fontSize: 20,
   fontWeight: FontWeight.bold,

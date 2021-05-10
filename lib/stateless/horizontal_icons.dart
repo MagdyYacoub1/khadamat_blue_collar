@@ -6,6 +6,9 @@ class HorizontalIcon extends StatelessWidget {
 
   const HorizontalIcon(this.index);
 
+  void onTap(){
+
+  }
   @override
   Widget build(BuildContext context) {
     return InkWell(
