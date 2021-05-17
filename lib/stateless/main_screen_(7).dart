@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:khadamat_blue_coller/modes/examples.dart';
 import 'package:khadamat_blue_coller/modes/services.dart';
 
-import '../color.dart';
 import '../styling.dart';
 import '../stateful/bottom_app_bar.dart';
 import 'grid_icon.dart';
@@ -37,9 +36,8 @@ class MainScreen extends StatelessWidget {
                             ),
                             hintText: "Search for a service provider.",
                             hintStyle: contextTextStyle,
-                            prefixIcon: Icon(
-                              Icons.search,
-                              color: contextTextColor,
+                            prefixIcon: Image.asset(
+                              "assets/search.png",
                             ),
                           ),
                         ),
@@ -54,7 +52,7 @@ class MainScreen extends StatelessWidget {
                         padding: const EdgeInsets.all(5.0),
                         child: IconButton(
                           icon: Image.asset(
-                            "assets/surface1@2x.png",
+                            "assets/filter.png",
                             width: 25.0,
                             height: 25.0,
                           ),

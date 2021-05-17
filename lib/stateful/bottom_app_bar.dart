@@ -49,26 +49,50 @@ class _MyBottomAppBarState extends State<MyBottomAppBar> {
           showUnselectedLabels: true,
           selectedItemColor: activeContextTextColor,
           unselectedItemColor: contextTextColor,
-          iconSize: 30.0,
           items: [
             BottomNavigationBarItem(
-              icon: Icon(Icons.format_list_numbered_rounded),
+              icon: Image.asset(
+                "assets/list.png",
+                width: 28,
+                height: 28,
+                color: currentIndex == 0? activeContextTextColor : contextTextColor,
+              ),
               label: "List",
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.format_align_center_rounded),
+              icon: Image.asset(
+                "assets/orders.png",
+                width: 28,
+                height: 28,
+                color: currentIndex == 1? activeContextTextColor : contextTextColor,
+              ),
               label: "Orders",
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.favorite_border),
+              icon: Image.asset(
+                "assets/favorite.png",
+                width: 28,
+                height: 28,
+                color: currentIndex == 2? activeContextTextColor : contextTextColor,
+              ),
               label: "Favorite",
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.widgets_outlined),
+              icon: Image.asset(
+                "assets/services.png",
+                width: 28,
+                height: 28,
+                color: currentIndex == 3? activeContextTextColor : contextTextColor,
+              ),
               label: "Services",
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.map_outlined),
+              icon: Image.asset(
+                "assets/map.png",
+                width: 28,
+                height: 28,
+                color: currentIndex == 4? activeContextTextColor : contextTextColor,
+              ),
               label: "Map",
             ),
           ],

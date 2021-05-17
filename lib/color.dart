@@ -2,9 +2,12 @@ import 'package:flutter/material.dart';
 
 const Color titleTextColor = Color(0xFF707070);
 const Color contextTextColor = Color(0xFFB2B2B2);
+const Color BoxBorderColor = Color(0xFFDCDCDC);
 const Color activeContextTextColor = Color(0xFF6E8AD5);
 const Color textColor2 = Color(0xFFEF505C);
 const Color textColor3 = Colors.white;
+const Color textColor4 = Color(0xFF2E2E2E);
+const Color skillContainerColor = Color(0xFFE6EBF8);
 Color buttonColor = createMaterialColor(Color(0xFFEB1C2C));
 
 

@@ -21,6 +21,7 @@ class HorizontalIcon extends StatelessWidget {
           ),
           child: Image.asset(
             "assets/${Examples.examplesIcons[index]}",
+            fit: BoxFit.contain,
           ),
         ),
       ),

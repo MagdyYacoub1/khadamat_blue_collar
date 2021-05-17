@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:khadamat_blue_coller/stateless/main_screen.dart';
+import 'package:khadamat_blue_coller/stateless/main_screen_(7).dart';
+import 'package:khadamat_blue_coller/stateless/new_order_screen_(15).dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +15,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MainScreen(),
+      home: SafeArea(
+        child: NewOrderScreen15(),
+      ),
     );
   }
 }

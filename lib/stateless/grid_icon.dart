@@ -24,7 +24,7 @@ class GridIcon extends StatelessWidget {
             ),
           ),
           child: Padding(
-            padding: const EdgeInsets.all(15.0),
+            padding: const EdgeInsets.all(10.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
