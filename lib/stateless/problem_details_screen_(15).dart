@@ -9,7 +9,6 @@ class ProblemDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      //height: mediaQuery.size.height * 0.6,
       child: Padding(
         padding: const EdgeInsets.only(
           top: 25.0,
