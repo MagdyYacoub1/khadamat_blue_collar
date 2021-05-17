@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:khadamat_blue_coller/stateless/favorites_screen%20(19).dart';
 
 import '../color.dart';
 import '../styling.dart';
@@ -16,9 +17,11 @@ class MyBottomAppBar extends StatefulWidget {
 class _MyBottomAppBarState extends State<MyBottomAppBar> {
   int currentIndex = 0;
 
-  void onTap(int index) {
+  void onTap(int index, BuildContext context) {
     setState(() {
       currentIndex = index;
+      if(currentIndex == 2)
+        Navigator.of(context).pushNamed(FavoriteScreen().routeName);
     });
   }
 
@@ -39,7 +42,7 @@ class _MyBottomAppBarState extends State<MyBottomAppBar> {
           topLeft: Radius.circular(20.0),
         ),
         child: BottomNavigationBar(
-          onTap: (index) => onTap(index),
+          onTap: (index) => onTap(index, context),
           elevation: 150.0,
           type: BottomNavigationBarType.fixed,
           currentIndex: currentIndex,

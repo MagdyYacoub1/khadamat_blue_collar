@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:khadamat_blue_coller/localization/localization_constants.dart';
 import 'package:khadamat_blue_coller/modes/services.dart';
 import 'package:khadamat_blue_coller/styling.dart';
 
@@ -11,6 +12,7 @@ class GridIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final MediaQueryData mediaQuery = MediaQuery.of(context);
     return Padding(
       padding: const EdgeInsets.all(4.0),
       child: InkWell(
@@ -34,7 +36,7 @@ class GridIcon extends StatelessWidget {
                 ),
                 SizedBox(height: 10.0),
                 Text(
-                  Services.services[index].serviceName,
+                  getTranslated(context, Services.services[index].serviceName),
                   overflow: TextOverflow.ellipsis,
                   style: contextTextStyle,
                 ),
