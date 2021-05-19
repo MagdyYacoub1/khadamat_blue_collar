@@ -23,5 +23,8 @@
   "Schedule": "مواعيد",
   "EGP": "ج.م",
   "AM": "ص",
-  "PM": "م"
+  "PM": "م",
+  "ordered_successfully": "تمت اضافة طلبك بنجاح",
+  "contact_technician": "سيتم التواصل مع الفني وابلاغه",
+  "go_main_screen": "الذهاب للرئيسية"
 }

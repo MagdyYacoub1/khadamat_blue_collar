@@ -4,6 +4,7 @@ import 'package:khadamat_blue_coller/stateful/bottomnavigationbar.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:khadamat_blue_coller/stateless/favorites_screen%20(19).dart';
 import 'package:khadamat_blue_coller/stateless/main_screen_(7).dart';
+import 'package:khadamat_blue_coller/stateless/new_order_screen_(15).dart';
 import 'package:provider/provider.dart';
 
 import 'localization/localization_constants.dart';
@@ -45,7 +46,7 @@ Widget initialPageBuilder(context, snapshot) {
       supportedLocales: supportedLocales,
       localeResolutionCallback: pickLocale,
       home: SafeArea(
-        child: BottomNavigationBarExample(),
+        child: NewOrderScreen15(),
       ),
       routes: routes,
     );

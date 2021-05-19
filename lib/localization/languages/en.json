@@ -22,5 +22,8 @@
   "Schedule": "Schedule",
   "EGP": "EGP",
   "AM": "AM",
-  "PM": "PM"
+  "PM": "PM",
+  "ordered_successfully": "Your oder has been added successfully",
+  "contact_technician": "The technician will be contacted and informed",
+  "go_main_screen": "Go to the main screen"
 }

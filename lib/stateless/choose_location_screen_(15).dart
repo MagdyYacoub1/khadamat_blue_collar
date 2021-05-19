@@ -9,6 +9,7 @@ class ChooseLocation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final MediaQueryData mediaQuery = MediaQuery.of(context);
     return Container(
       //height: mediaQuery.size.height * 0.6,
       child: Padding(
@@ -45,7 +46,8 @@ class ChooseLocation extends StatelessWidget {
               ),
             ),
             SizedBox(height: 10.0),
-            Image.asset("assets/map_placeholder.png"), // need to be replaced with a real map API.
+            Image.asset("assets/map_placeholder.png",
+            height: mediaQuery.size.height * 0.45,), // need to be replaced with a real map API.
           ],
         ),
       ),

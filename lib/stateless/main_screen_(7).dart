@@ -9,6 +9,7 @@ import 'horizontal_icons.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({Key key}) : super(key: key);
+  final String routeName = "./homeScreen";
 
   @override
   Widget build(BuildContext context) {

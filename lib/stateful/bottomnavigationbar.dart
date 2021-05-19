@@ -7,7 +7,7 @@ import '../color.dart';
 
 class BottomNavigationBarExample extends StatefulWidget {
   const BottomNavigationBarExample({Key key}) : super(key: key);
-
+  final String routeName = "./bottomNavigationBar";
   @override
   State<StatefulWidget> createState() => _BottomNavigationBarExampleState();
 }

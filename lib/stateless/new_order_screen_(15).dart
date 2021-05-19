@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
+import 'package:khadamat_blue_coller/stateless/order_done_alert.dart';
 import 'package:khadamat_blue_coller/stateless/problem_details_screen_(15).dart';
 import 'package:khadamat_blue_coller/stateless/worker_card.dart';
 
@@ -10,6 +11,7 @@ import 'choose_location_screen_(15).dart';
 
 class NewOrderScreen15 extends StatefulWidget {
   const NewOrderScreen15({Key key}) : super(key: key);
+  final String routeName = "./NewOrderScreen";
 
   @override
   _NewOrderScreen15State createState() => _NewOrderScreen15State();
@@ -24,13 +26,17 @@ class _NewOrderScreen15State extends State<NewOrderScreen15> {
     ProblemDetails(),
   ];
 
-  void scrollPanel() {
-    if(pageIndex < panelCount - 1)
-      {
-        pageIndex++;
-        _controller.nextPage(
-            duration: Duration(milliseconds: 300), curve: Curves.linear);
-      }
+  void scrollPanel(BuildContext context) {
+    if (pageIndex < panelCount - 1) {
+      pageIndex++;
+      _controller.nextPage(
+          duration: Duration(milliseconds: 300), curve: Curves.linear);
+    } else {
+      showDialog(
+        context: context,
+        builder: (BuildContext context) => OrderDoneSuccessfullyAlert(),
+      );
+    }
   }
 
   @override
@@ -99,10 +105,10 @@ class _NewOrderScreen15State extends State<NewOrderScreen15> {
                           items: items,
                           carouselController: _controller,
                           options: CarouselOptions(
-                            height: mediaQuery.size.height * 0.65,
+                            height: mediaQuery.size.height * 0.62,
                             viewportFraction: 1.0,
                             initialPage: 0,
-                            enlargeCenterPage: true,
+                            //enlargeCenterPage: true,
                             enableInfiniteScroll: false,
                             onPageChanged: (index, reason) {
                               setState(() {
@@ -125,7 +131,7 @@ class _NewOrderScreen15State extends State<NewOrderScreen15> {
                         TextButton(
                           onPressed: () {
                             setState(() {
-                              scrollPanel();
+                              scrollPanel(context);
                             });
                           },
                           style: ButtonStyle(
